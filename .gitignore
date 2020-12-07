@@ -1,0 +1,16 @@
+#
+# Normal rules
+#
+*~
+
+#
+# Top-level generic files
+#
+/out
+/out/*
+/output
+/output/*
+/rockdev
+/rockdev/*
+/IMAGE
+/IMAGE/*
