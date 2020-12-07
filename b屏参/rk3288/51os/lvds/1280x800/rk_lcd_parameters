@@ -1,0 +1,31 @@
+screen_type = 2; 
+screen_lvds_format = 0; 
+screen_face = 0; 
+#这个值无需更改 
+screen_lcdc_aclk = 500000000;   
+# 下面参数部分表示芯片的视频信号的相关参数，需要根据芯片的 datasheet来配置 
+screen_x_res = 1280;        
+screen_y_res = 800; 
+screen_width = 121; 
+screen_height = 162; 
+ 
+screen_pixclock = 78000000; 
+screen_left_margin = 100; 
+screen_right_margin = 18; 
+screen_hsync_len = 8; 
+ 
+screen_upper_margin = 6; 
+screen_lower_margin = 10; 
+screen_vsync_len = 2; 
+ 
+# 相关CLK的相位  0 表示不反向  1表示反向 
+screen_pin_hsync = 0;  
+screen_pin_vsync = 0; 
+screen_pin_den = 0;  
+screen_pin_dclk = 1;  
+# RGB 颜色互换 
+screen_swap_rb = 0;  
+screen_swap_rg = 0; 
+screen_swap_gb = 0; 
+screen_swap_delta = 0; 
+screen_swap_dumy = 0; 

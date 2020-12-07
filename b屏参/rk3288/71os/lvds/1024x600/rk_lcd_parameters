@@ -1,0 +1,47 @@
+
+##×¢ÊÍ
+#×¢ÊÍ
+# 0 - DSI; 1 - eDP
+panel-type = 2;
+
+# panel info
+unprepare-delay-ms = 100;
+enable-delay-ms = 100;
+disable-delay-ms = 100;
+prepare-delay-ms = 100;
+reset-delay-ms = 100;
+init-delay-ms = 100;
+width-mm = 100;
+height-mm = 100;
+
+# panel timing
+clock-frequency = 51200000;
+hactive = 1024;
+hfront-porch = 160;       
+hsync-len = 1;
+hback-porch = 160;
+vactive = 600;
+vfront-porch = 12;
+vsync-len = 1;
+vback-porch = 23;
+hsync-active = 0;
+vsync-active = 0;
+de-active = 0;
+pixelclk-active = 1;
+
+# for dsi panel
+dsi,flags = 0;
+dsi,format = 0;
+dsi,lanes = 4;
+
+# for lvds 
+# MEDIA_BUS_FMT_RGB666_1X18 4105
+# MEDIA_BUS_FMT_RGB888_1X24 4106
+bus_format=4106;
+#0:jeida 1:vesa 
+data_mapping=1;
+data_width=24;
+# 0: lvds 1: duallvds  
+output_mode=0; 
+
+panel-init-sequence = 29 00 06 14 01 08 00 00 00 ff aa 01 02 03 04 05 06 07 ff aa AA bb ff;
